@@ -1,12 +1,7 @@
-import express from "express";
-import cors from "cors";
+import { customExpress } from "./config/customExpress";
+import { routes } from "./routes/routes";
 
-const app = express();
-app.use(cors());
-app.use(express.json());
-
-app.get("/test", (req, res) => {
-  res.send("OK!");
-});
+const app = customExpress();
+routes(app);
 
 export default app;

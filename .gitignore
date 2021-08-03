@@ -1,2 +1,7 @@
 dist
 node_modules
+.env
+.env.test
+repoprovas.sql
+insertions.sql
+banco.png
